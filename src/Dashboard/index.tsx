@@ -1,5 +1,6 @@
 import React from 'react';
 import { View,Text } from 'react-native';
+import HighlightCard from '../components/HighlightCard/index';
 
 
  import {
@@ -11,7 +12,8 @@ import { View,Text } from 'react-native';
   User,
   UserGreeting,
   UserName,
-  Icon
+  Icon,
+  HighlightCards
 
 } from './styles';
 
@@ -30,6 +32,11 @@ const Dashboard: React.FC = () => {
           <Icon name="power" />
         </UserWrapper>
       </Header>
+      <HighlightCards>
+        <HighlightCard/>
+        <HighlightCard/>
+        <HighlightCard/>
+      </HighlightCards>
     </Container>
   );
 }
