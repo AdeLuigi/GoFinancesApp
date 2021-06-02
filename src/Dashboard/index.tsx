@@ -1,7 +1,8 @@
 import React from 'react';
 import { View,Text } from 'react-native';
-import {HighlightCard} from '../components/HighlightCard/index';
 
+import {HighlightCard} from '../components/HighlightCard/index';
+import TransactionCard from '../components/TransactionCard'
 
  import {
   Container,
@@ -13,7 +14,9 @@ import {HighlightCard} from '../components/HighlightCard/index';
   UserGreeting,
   UserName,
   Icon,
-  HighlightCards
+  HighlightCards,
+  Transactions,
+  Title,
 
 } from './styles';
 
@@ -52,6 +55,10 @@ const Dashboard: React.FC = () => {
           lasTransaction="Última entrada dia 13 de abril"
         />
       </HighlightCards>
+      <Transactions>
+        <Title>Listagem</Title>
+        <TransactionCard/>
+      </Transactions>
     </Container>
   );
 }
