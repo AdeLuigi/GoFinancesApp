@@ -17,10 +17,36 @@ import TransactionCard from '../components/TransactionCard'
   HighlightCards,
   Transactions,
   Title,
+  TransactionList
 
 } from './styles';
 
 const Dashboard: React.FC = () => {
+  const data = [{
+    title:"Desenvolvimento do site", 
+    amount:"R$ 12.000,00",  
+    category:{name:'Vendas', icon:'dollar'},
+    date:"04/05/2021",
+  },
+  {
+    title:"Desenvolvimento do site", 
+    amount:"R$ 12.000,00",  
+    category:{name:'Vendas', icon:'dollar'},
+    date:"04/05/2021",
+  },
+  {
+    title:"Desenvolvimento do site", 
+    amount:"R$ 12.000,00",  
+    category:{name:'Vendas', icon:'dollar'},
+    date:"04/05/2021",
+  },
+  {
+    title:"Desenvolvimento do site", 
+    amount:"R$ 12.000,00",  
+    category:{name:'Vendas', icon:'dollar'},
+    date:"04/05/2021",
+  }]
+
   return(
     <Container>
       <Header>
@@ -57,7 +83,15 @@ const Dashboard: React.FC = () => {
       </HighlightCards>
       <Transactions>
         <Title>Listagem</Title>
-        <TransactionCard/>
+        <TransactionList
+          data={data}
+          renderItem={({item}) => <TransactionCard data={item}/>}
+          showsVerticalScrollIndicator={false}
+          contentContainerStyle={{
+            paddingBottom: 16
+          }}
+        />
+
       </Transactions>
     </Container>
   );
