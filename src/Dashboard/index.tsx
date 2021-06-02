@@ -1,6 +1,6 @@
 import React from 'react';
 import { View,Text } from 'react-native';
-import HighlightCard from '../components/HighlightCard/index';
+import {HighlightCard} from '../components/HighlightCard/index';
 
 
  import {
@@ -33,9 +33,24 @@ const Dashboard: React.FC = () => {
         </UserWrapper>
       </Header>
       <HighlightCards>
-        <HighlightCard/>
-        <HighlightCard/>
-        <HighlightCard/>
+        <HighlightCard
+          type="up" 
+          title="Entradas" 
+          amount="18.400,00" 
+          lasTransaction="Última entrada dia 13 de abril"
+        />
+        <HighlightCard
+          type="down"
+          title="Entradas" 
+          amount="18.400,00" 
+          lasTransaction="Última entrada dia 13 de abril"
+        />
+        <HighlightCard
+          type="total"
+          title="Entradas" 
+          amount="18.400,00" 
+          lasTransaction="Última entrada dia 13 de abril"
+        />
       </HighlightCards>
     </Container>
   );
