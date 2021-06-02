@@ -23,29 +23,27 @@ import TransactionCard from '../components/TransactionCard'
 
 const Dashboard: React.FC = () => {
   const data = [{
+    type:'positive',
     title:"Desenvolvimento do site", 
     amount:"R$ 12.000,00",  
-    category:{name:'Vendas', icon:'dollar'},
+    category:{name:'Vendas', icon:'dollar-sign'},
     date:"04/05/2021",
   },
   {
-    title:"Desenvolvimento do site", 
-    amount:"R$ 12.000,00",  
-    category:{name:'Vendas', icon:'dollar'},
+    type:'negative',
+    title:"Hamburgueria Pizzy", 
+    amount:"R$ 58,00",  
+    category:{name:'Alimentação', icon:'coffee'},
     date:"04/05/2021",
   },
   {
-    title:"Desenvolvimento do site", 
-    amount:"R$ 12.000,00",  
-    category:{name:'Vendas', icon:'dollar'},
+    type:'negative',
+    title:"Aluguel do apartamento", 
+    amount:"R$ 1200,00",  
+    category:{name:'Casa', icon:'shopping-bag'},
     date:"04/05/2021",
-  },
-  {
-    title:"Desenvolvimento do site", 
-    amount:"R$ 12.000,00",  
-    category:{name:'Vendas', icon:'dollar'},
-    date:"04/05/2021",
-  }]
+  }
+  ]
 
   return(
     <Container>
