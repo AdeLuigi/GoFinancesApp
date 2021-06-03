@@ -19,9 +19,9 @@ interface CategoryProps {
 }
 
 interface Data {
-  data:Props;
+  data:TransactionCardProps;
 }
-interface Props {
+export interface TransactionCardProps {
   title: string;
   amount: string;
   category: CategoryProps;
