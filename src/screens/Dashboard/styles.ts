@@ -1,6 +1,6 @@
 import styled from 'styled-components/native';
 import { FlatList } from 'react-native'
-import theme from '../global/styles/theme';
+import theme from '../../global/styles/theme';
 import { RFPercentage, RFValue } from 'react-native-responsive-fontsize'
 import { Feather } from '@expo/vector-icons'
 import { DataListProps } from './index';

@@ -1,8 +1,8 @@
 import React from 'react';
 import { View,Text } from 'react-native';
 
-import {HighlightCard} from '../components/HighlightCard/index';
-import TransactionCard, { TransactionCardProps } from '../components/TransactionCard'
+import {HighlightCard} from '../../components/HighlightCard/index';
+import TransactionCard, { TransactionCardProps } from '../../components/TransactionCard'
 
  import {
   Container,

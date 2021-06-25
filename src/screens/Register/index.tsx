@@ -1,5 +1,5 @@
 import React from 'react';
-import Input from '../components/Forms/Input';
+import Input from '../../components/Forms/Input';
 
 import { Container, Header, Title, Form } from './styles';
 
