@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Input from '../../components/Forms/Input';
 import Button from '../../components/Forms/Button'
 import TransactionTypeButton from '../../components/Forms/TransactionTypeButton';
+import CategorySelection from '../../components/Forms/CategorySelection'
 
 import { Container, Header, Title, Form, Fields, TransactionTypes  } from './styles';
 
@@ -38,6 +39,7 @@ const Register: React.FC = () => {
               isActive={transactionType === 'down'}
             />
           </TransactionTypes>
+          <CategorySelection title="Categoria"/>
         </Fields>
         <Button title="Registrar Transação"/>
       </Form>
