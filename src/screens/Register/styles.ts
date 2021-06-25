@@ -8,6 +8,7 @@ export const Container = styled.View`
 export const Form = styled.View`
   width: 100%;
   padding:24px;
+  justify-content: space-between;
   flex: 1;
 `;
 
@@ -24,4 +25,7 @@ export const Title = styled.Text`
   color: ${({theme}) => theme.colors.shape};
   font-family: ${({theme}) => theme.fonts.regular};
   font-size: ${RFValue(18)}px;
+`;
+
+export const Fields = styled.View`
 `;
